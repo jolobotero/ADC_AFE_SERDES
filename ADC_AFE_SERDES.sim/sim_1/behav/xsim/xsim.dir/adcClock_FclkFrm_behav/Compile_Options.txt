@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "adcClock_FclkFrm_behav" "xil_defaultlib.adcClock_FclkFrm" -log "elaborate.log" 

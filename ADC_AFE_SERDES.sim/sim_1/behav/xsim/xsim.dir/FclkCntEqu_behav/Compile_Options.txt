@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "FclkCntEqu_behav" "xil_defaultlib.FclkCntEqu" -log "elaborate.log" 

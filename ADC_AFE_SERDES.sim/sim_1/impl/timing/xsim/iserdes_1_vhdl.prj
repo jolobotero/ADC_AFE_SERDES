@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ADC_AFE_SERDES.srcs/sim_1/new/iserdes_1.vhd" \
+
+# Do not sort compile order
+nosort

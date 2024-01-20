@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.sim/sim_1/impl/timing/xsim/iserdes_1_time_impl.v,1703646496,verilog,,,,AdcClock;AdcClockProcess;AdcDataDone;Adc_FDPE;Dat_Iserdes_Out;DataOutModule;DataOutModule_6;EquCntModule;EquCntModule_1;FCLKSrdsReg;FCLK_ADC;FCLK_GenPulse;FCLK_GenPulse_Fdcr;FCLK_GenPulse_Fdcr_8;FclkCntEqu;FclkCntEqu_0;IBUFDS_DIFF_OUT_UNIQ_BASE_;IntRegOutModule;IntRegOutModule_2;IntRstFfModule;IntRstFfModule_3;IntSlipCntModule;IntSlipCntModule_7;IntSrlModule;IntSrlModule_4;RSTSetModule;RSTSetModule_5;adcClock_FclkFrm;glbl;iserdes_adc,,,,,,,,
+D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sim_1/new/iserdes_1.vhd,1703382011,vhdl,,,,iserdes_1,,,,,,,,

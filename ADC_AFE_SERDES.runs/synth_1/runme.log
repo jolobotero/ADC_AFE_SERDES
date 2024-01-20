@@ -1,0 +1,668 @@
+
+*** Running vivado
+    with args -log adcClock_FclkFrm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source adcClock_FclkFrm.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source adcClock_FclkFrm.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.410 ; gain = 88.059
+Command: read_checkpoint -auto_incremental -incremental D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/utils_1/imports/synth_1/adcClock_FclkFrm.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/utils_1/imports/synth_1/adcClock_FclkFrm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top adcClock_FclkFrm -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2488
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1444.359 ; gain = 408.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'adcClock_FclkFrm' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:60]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFGDS_inst' to cell 'IBUFGDS' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:160]
+INFO: [Synth 8-3491] module 'Adc_FDPE' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:35' bound to instance 'adc_F' of component 'Adc_FDPE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'Adc_FDPE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:44]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDPE_inst1' to cell 'FDPE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:57]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:68]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'Adc_FDPE' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd:44]
+INFO: [Synth 8-3491] module 'AdcClock' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:35' bound to instance 'adc' of component 'AdcClock' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'AdcClock' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:50]
+INFO: [Synth 8-113] binding component instance 'IDELAYCTRL_inst' to cell 'IDELAYCTRL' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:77]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 16 - type: integer 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b1 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: CLOCK - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE2_inst_ClkDiv' to cell 'IDELAYE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:84]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IBUF - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst_DIVCLK' to cell 'ISERDESE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:113]
+INFO: [Synth 8-113] binding component instance 'BUFIO_inst_AdcClock' to cell 'BUFIO' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:177]
+	Parameter BUFR_DIVIDE bound to: 7 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'BUFR_inst_IntBitClk' to cell 'BUFR' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:183]
+INFO: [Synth 8-3491] module 'AdcClockProcess' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClockProcess.vhd:37' bound to instance 'adcclkp' of component 'AdcClockProcess' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'AdcClockProcess' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClockProcess.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'AdcClockProcess' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClockProcess.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'AdcClock' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd:50]
+INFO: [Synth 8-3491] module 'FCLK_ADC' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:36' bound to instance 'fclk' of component 'FCLK_ADC' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'FCLK_ADC' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:57]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFDS_DIFF_OUT_FCLK' to cell 'IBUFDS_DIFF_OUT' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:111]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst_FCLK_P' to cell 'ISERDESE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:129]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLK_INVERTED bound to: 1'b1 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst_FCLK_N' to cell 'ISERDESE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:194]
+INFO: [Synth 8-3491] module 'FclkCntEqu' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:36' bound to instance 'FCLK_EVN' of component 'FclkCntEqu' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'FclkCntEqu' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:44]
+INFO: [Synth 8-3491] module 'RSTSetModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/RSTSetModule.vhd:35' bound to instance 'RstSet1' of component 'RSTSetModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'RSTSetModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/RSTSetModule.vhd:47]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instIntEqu' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/RSTSetModule.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'RSTSetModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/RSTSetModule.vhd:47]
+INFO: [Synth 8-3491] module 'IntRegOutModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:35' bound to instance 'IntRegOut1' of component 'IntRegOutModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'IntRegOutModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:43]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instdata0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:51]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instdata1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:62]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instdata2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:73]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instdata3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'IntRegOutModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd:43]
+INFO: [Synth 8-3491] module 'IntRstFfModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:35' bound to instance 'IntRstFf1' of component 'IntRstFfModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'IntRstFfModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:42]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn0' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:50]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn1' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:61]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn2' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:72]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn3' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:83]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn4' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:94]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn5' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:105]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn6' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:116]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDSE_instrstIn7' to cell 'FDSE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'IntRstFfModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd:42]
+INFO: [Synth 8-3491] module 'EquCntModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:35' bound to instance 'EquCnt1' of component 'EquCntModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'EquCntModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:44]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'EquCnt_0' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:53]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'EquCnt_1' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:64]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'EquCnt_2' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:75]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'EquCnt_3' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'EquCntModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd:44]
+INFO: [Synth 8-3491] module 'IntSrlModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:36' bound to instance 'IntSrl1' of component 'IntSrlModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'IntSrlModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:44]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'SRLC32E_instintreg0' to cell 'SRLC32E' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:50]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'SRLC32E_instintreg1' to cell 'SRLC32E' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:62]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'SRLC32E_instintreg2' to cell 'SRLC32E' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:74]
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'SRLC32E_instintreg3' to cell 'SRLC32E' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'IntSrlModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:44]
+INFO: [Synth 8-3491] module 'DataOutModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:35' bound to instance 'dataOut1' of component 'DataOutModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'DataOutModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:42]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instOut0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:46]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instOut1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:57]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instOut2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:68]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_instOut3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'DataOutModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd:42]
+INFO: [Synth 8-3491] module 'IntSlipCntModule' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:35' bound to instance 'slipCnt1' of component 'IntSlipCntModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'IntSlipCntModule' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:42]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IntSlipCnt_0' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:50]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IntSlipCnt_1' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:61]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IntSlipCnt_2' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:72]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IntSlipCnt_3' to cell 'FDRE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'IntSlipCntModule' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'FclkCntEqu' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:44]
+INFO: [Synth 8-3491] module 'FclkCntEqu' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd:36' bound to instance 'FCLK_ODD' of component 'FclkCntEqu' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:267]
+INFO: [Synth 8-3491] module 'FCLKSrdsReg' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:36' bound to instance 'ADCFrame' of component 'FCLKSrdsReg' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'FCLKSrdsReg' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:57]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:120]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:131]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:142]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:153]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg4' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:164]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg5' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:175]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg6' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:186]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg7' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:197]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:229]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:240]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:251]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:262]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_4' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:273]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_5' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:284]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_6' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:295]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_reg2_7' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:306]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:322]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:333]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:344]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:355]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb4' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:366]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb5' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:377]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb6' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:388]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkLsb7' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:399]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb8' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:412]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb9' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:423]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb10' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:434]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb11' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:445]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb12' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:456]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb13' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:467]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb14' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:478]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmClkMsb15' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:489]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FRMALLZERO' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:510]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmEqu_d' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:522]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmSwapMux_d' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:533]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_FrmLsbMsb_d' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:544]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_SlipCntTc_1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:648]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_SlipCntTc_2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:661]
+INFO: [Synth 8-3491] module 'FCLK_GenPulse' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd:38' bound to instance 'genpulse1' of component 'FCLK_GenPulse' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'FCLK_GenPulse' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd:45]
+INFO: [Synth 8-3491] module 'FCLK_GenPulse_Fdcr' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd:37' bound to instance 'GenPulse_Fdcr_1' of component 'FCLK_GenPulse_Fdcr' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'FCLK_GenPulse_Fdcr' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd:45]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_genPulse' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'FCLK_GenPulse_Fdcr' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd:45]
+INFO: [Synth 8-3491] module 'FCLK_GenPulse_Fdcr' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd:37' bound to instance 'GenPulse_Fdcr_2' of component 'FCLK_GenPulse_Fdcr' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'FCLK_GenPulse' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd:45]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_ReSync' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:699]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDCE_inst_done' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:713]
+INFO: [Synth 8-256] done synthesizing module 'FCLKSrdsReg' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'FCLK_ADC' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:57]
+INFO: [Synth 8-3491] module 'AdcDataDone' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcDataDone.vhd:34' bound to instance 'adcdone' of component 'AdcDataDone' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'AdcDataDone' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcDataDone.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'AdcDataDone' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/AdcDataDone.vhd:43]
+INFO: [Synth 8-3491] module 'iserdes_adc' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:35' bound to instance 'iserdes_dat_in' of component 'iserdes_adc' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'iserdes_adc' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:47]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 7 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst_D0_P' to cell 'ISERDESE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:57]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 7 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLK_INVERTED bound to: 1'b1 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst_D0_n' to cell 'ISERDESE2' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'iserdes_adc' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:47]
+INFO: [Synth 8-3491] module 'Dat_Iserdes_Out' declared at 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:36' bound to instance 'D' of component 'Dat_Iserdes_Out' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'Dat_Iserdes_Out' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:45]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:68]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:79]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_2' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:90]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_3' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:101]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_4' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:112]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_5' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:123]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_6' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:134]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_7' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:145]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_8' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:156]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_9' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:167]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_10' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:178]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_11' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:189]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_12' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:200]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Dat_Reg_13' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:211]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'adcData_IntDatMux_Reg0' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:237]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'adcData_IntDatMux_Reg1' to cell 'FDCE' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:248]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'Dat_Iserdes_Out' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'adcClock_FclkFrm' (0#1) [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd:60]
+WARNING: [Synth 8-3848] Net IntFrmClkRst in module/entity FCLK_ADC does not have driver. [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:98]
+WARNING: [Synth 8-3848] Net IntFrmBitSlip in module/entity FCLK_ADC does not have driver. [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd:95]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1542.156 ; gain = 506.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.156 ; gain = 506.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1542.156 ; gain = 506.359
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+WARNING: [Synth 8-327] inferring latch for variable 'IntAddr_reg' [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1542.156 ; gain = 506.359
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	  16 Input    6 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	  16 Input    2 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 18    
+	   2 Input    1 Bit        Muxes := 24    
+	   6 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (fclk/FCLK_EVN/IntSrl1/IntAddr_reg[4]) is unused and will be removed from module adcClock_FclkFrm.
+WARNING: [Synth 8-3332] Sequential element (fclk/FCLK_EVN/slipCnt1/IntSlipCnt_3) is unused and will be removed from module adcClock_FclkFrm.
+WARNING: [Synth 8-3332] Sequential element (fclk/FCLK_ODD/IntSrl1/IntAddr_reg[4]) is unused and will be removed from module adcClock_FclkFrm.
+WARNING: [Synth 8-3332] Sequential element (fclk/FCLK_ODD/slipCnt1/IntSlipCnt_3) is unused and will be removed from module adcClock_FclkFrm.
+WARNING: [Synth 8-3332] Sequential element (fclk/ADCFrame/FDCE_inst_FRMALLZERO) is unused and will be removed from module adcClock_FclkFrm.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:51 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+-------------------+---------------+----------------+
+|Module Name      | RTL Object        | Depth x Width | Implemented As | 
++-----------------+-------------------+---------------+----------------+
+|AdcClockProcess  | State             | 32x3          | LUT            | 
+|adcClock_FclkFrm | adc/adcclkp/State | 32x3          | LUT            | 
++-----------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFIO           |     1|
+|2     |BUFR            |     1|
+|3     |IDELAYCTRL      |     1|
+|4     |IDELAYE2        |     1|
+|5     |ISERDESE2       |     5|
+|6     |LUT1            |    11|
+|7     |LUT2            |    24|
+|8     |LUT3            |    47|
+|9     |LUT4            |    33|
+|10    |LUT5            |    29|
+|11    |LUT6            |    52|
+|12    |MUXF7           |     4|
+|13    |SRLC32E         |     8|
+|14    |FDCE            |   147|
+|15    |FDPE            |     2|
+|16    |FDRE            |    19|
+|17    |FDSE            |    16|
+|18    |LD              |     6|
+|19    |IBUF            |     5|
+|20    |IBUFDS_DIFF_OUT |     1|
+|21    |IBUFGDS         |     1|
+|22    |OBUF            |    40|
++------+----------------+------+
+
+Report Instance Areas: 
++------+------------------------+---------------------+------+
+|      |Instance                |Module               |Cells |
++------+------------------------+---------------------+------+
+|1     |top                     |                     |   454|
+|2     |  D                     |Dat_Iserdes_Out      |    42|
+|3     |  adc                   |AdcClock             |   124|
+|4     |    adcclkp             |AdcClockProcess      |   119|
+|5     |  adc_F                 |Adc_FDPE             |     7|
+|6     |  adcdone               |AdcDataDone          |     1|
+|7     |  fclk                  |FCLK_ADC             |   225|
+|8     |    ADCFrame            |FCLKSrdsReg          |   103|
+|9     |      genpulse1         |FCLK_GenPulse        |     3|
+|10    |        GenPulse_Fdcr_1 |FCLK_GenPulse_Fdcr   |     1|
+|11    |        GenPulse_Fdcr_2 |FCLK_GenPulse_Fdcr_8 |     2|
+|12    |    FCLK_EVN            |FclkCntEqu           |    61|
+|13    |      EquCnt1           |EquCntModule_1       |    17|
+|14    |      IntRegOut1        |IntRegOutModule_2    |     7|
+|15    |      IntRstFf1         |IntRstFfModule_3     |     8|
+|16    |      IntSrl1           |IntSrlModule_4       |     7|
+|17    |      RstSet1           |RSTSetModule_5       |     1|
+|18    |      dataOut1          |DataOutModule_6      |    10|
+|19    |      slipCnt1          |IntSlipCntModule_7   |    11|
+|20    |    FCLK_ODD            |FclkCntEqu_0         |    56|
+|21    |      EquCnt1           |EquCntModule         |    17|
+|22    |      IntRegOut1        |IntRegOutModule      |     7|
+|23    |      IntRstFf1         |IntRstFfModule       |     8|
+|24    |      IntSrl1           |IntSrlModule         |     7|
+|25    |      RstSet1           |RSTSetModule         |     1|
+|26    |      dataOut1          |DataOutModule        |     5|
+|27    |      slipCnt1          |IntSlipCntModule     |    11|
+|28    |  iserdes_dat_in        |iserdes_adc          |     9|
++------+------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 2346.031 ; gain = 1310.234
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2346.031 ; gain = 0.000
+CRITICAL WARNING: [Netlist 29-180] Cell 'ISERDESE2' is not a supported primitive for zynquplus part: xck26-sfvc784-2LV-c.  5 instances of this cell will be treated as black boxes, not architecture primitives [D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd:57]
+Resolution: Modify instantiation of primitive to match Xilinx primitive. Please review the guidelines in the Design Methodology Guide UG949 to replace this primitive with a supported primitive.
+CRITICAL WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'adc/IDELAYCTRL_inst' of type 'IDELAYCTRL' is '7SERIES'; it is being changed to match the current FPGA architecture, 'ULTRASCALE'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. Failure to set the SIM_DEVICE appropriately will prevent bitstream generation for this design.
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+CRITICAL WARNING: [Netlist 29-335] Instance 'adc/IDELAYE2_inst_ClkDiv' of type 'IDELAYE2' may have failed to retarget to the target device for the following reasons:
+ - Instance 'adc/IDELAYE2_inst_ClkDiv' of type 'IDELAYE2' has 'IDELAY_TYPE' attribute value of 'VARIABLE'. The replacement 'IDELAYE3' cell will have 'DELAY_FORMAT' set to 'COUNT' and the 'EN_VTC' pin tied to ground, and so the delay value for this cell will not be automatically calibrated or voltage/temperature tracked.
+ - Nets are connected to one or more pins of the 'CNTVALUEIN[0:4]' bus. The target replacement cell of type 'IDELAYE3' uses 9 bits for this bus instead of 5, and the associated delay calculation is significantly different.
+It is suggested to replace the component with the native IDELAYE3 component to update the design to the functionality and capabilities of the target architecture DELAY cell or else modify the instantiation to match the above characteristics. Please consult UG 1026: UltraScale Architecture Migration User Guide as well as UG 571: UltraScale SelectIO User Guide and the appropriate datasheet for re-targeting and other details about the IDELAYE3 and ODELAYE3 components.
+CRITICAL WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'adc/IDELAYE2_inst_ClkDiv' of type 'IDELAYE3' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, 'ULTRASCALE_PLUS'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. Failure to set the SIM_DEVICE appropriately will prevent bitstream generation for this design.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'DATA_RATE' constraint because cell 'adc/ISERDESE2_inst_DIVCLK' is not directly connected to top level port. 'DATA_RATE' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'DATA_RATE' constraint because cell 'fclk/ISERDESE2_inst_FCLK_N' is not directly connected to top level port. 'DATA_RATE' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'DATA_RATE' constraint because cell 'fclk/ISERDESE2_inst_FCLK_P' is not directly connected to top level port. 'DATA_RATE' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'DATA_RATE' constraint because cell 'iserdes_dat_in/ISERDESE2_inst_D0_P' is not directly connected to top level port. 'DATA_RATE' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'DATA_RATE' constraint because cell 'iserdes_dat_in/ISERDESE2_inst_D0_n' is not directly connected to top level port. 'DATA_RATE' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2394.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  BUFIO => BUFGCE: 1 instance 
+  BUFR => BUFGCE_DIV: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 5 instances
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (DIFFINBUF, IBUFCTRL(x2)): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IDELAYE2 => IDELAYE3: 1 instance 
+  LD => LDCE: 6 instances
+
+Synth Design complete, checksum: 9f96c3c4
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 14 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:12 . Memory (MB): peak = 2394.984 ; gain = 1366.711
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/P_vhdl_Vi/ADC_AFE_SERDES/ADC_AFE_SERDES.runs/synth_1/adcClock_FclkFrm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file adcClock_FclkFrm_utilization_synth.rpt -pb adcClock_FclkFrm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 28 12:34:55 2023...

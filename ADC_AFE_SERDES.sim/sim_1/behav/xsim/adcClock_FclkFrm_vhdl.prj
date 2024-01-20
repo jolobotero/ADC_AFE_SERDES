@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/AdcClock.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/AdcClockProcess.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/AdcDataDone.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/Adc_FDPE.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/Dat_Iserdes_Out.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/DataOutModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/EquCntModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/FCLKSrdsReg.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/FCLK_ADC.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/FCLK_GenPulse_Fdcr.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/FclkCntEqu.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/IntRegOutModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/IntRstFfModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/IntSlipCntModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/IntSrlModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/RSTSetModule.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/iserdes_adc.vhd" \
+"../../../../ADC_AFE_SERDES.srcs/sources_1/new/adcClock_FclkFrm.vhd" \
+
+# Do not sort compile order
+nosort

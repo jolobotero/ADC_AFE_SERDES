@@ -1,0 +1,4 @@
+Running: xsim.dir/FclkCntEqu_behav/xsimk.exe -simmode gui -wdb FclkCntEqu_behav.wdb -simrunnum 0 -socket 62520
+Design successfully loaded
+Design Loading Memory Usage: 7172 KB (Peak: 7172 KB)
+Design Loading CPU Usage: 61 ms

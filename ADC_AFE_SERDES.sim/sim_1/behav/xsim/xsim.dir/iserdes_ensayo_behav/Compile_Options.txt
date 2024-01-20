@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "iserdes_ensayo_behav" "xil_defaultlib.iserdes_ensayo" -log "elaborate.log" 

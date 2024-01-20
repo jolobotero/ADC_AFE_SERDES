@@ -1,0 +1,336 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../ADC_AFE_SERDES.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "AdcDataDone_0": "",
+      "DatBus_0": "",
+      "FDCE_ARRAYS_0": "",
+      "DatMux_0": "",
+      "FdceReg_0": "",
+      "iserdes_adc_0": ""
+    },
+    "ports": {
+      "DatRst_0": {
+        "direction": "I"
+      },
+      "DatBitSlip_p_0": {
+        "direction": "I"
+      },
+      "DatBitSlip_n_0": {
+        "direction": "I"
+      },
+      "DatClk_0": {
+        "direction": "I"
+      },
+      "DatClkDiv_0": {
+        "direction": "I"
+      },
+      "DatDone_0": {
+        "direction": "I"
+      },
+      "DatEna_0": {
+        "direction": "I"
+      },
+      "DatReSync_0": {
+        "direction": "I"
+      },
+      "DatSwapMux_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "AdcDataDone_0": {
+        "vlnv": "xilinx.com:module_ref:AdcDataDone:1.0",
+        "xci_name": "design_1_AdcDataDone_0_0",
+        "xci_path": "ip\\design_1_AdcDataDone_0_0\\design_1_AdcDataDone_0_0.xci",
+        "inst_hier_path": "AdcDataDone_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AdcDataDone",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DatDone": {
+            "direction": "I"
+          },
+          "IntDatDone": {
+            "direction": "O"
+          },
+          "DatRst": {
+            "direction": "I"
+          },
+          "DatClkDiv": {
+            "direction": "I"
+          },
+          "DatEna": {
+            "direction": "I"
+          },
+          "IntDatEna": {
+            "direction": "O"
+          }
+        }
+      },
+      "DatBus_0": {
+        "vlnv": "xilinx.com:module_ref:DatBus:1.0",
+        "xci_name": "design_1_DatBus_0_0",
+        "xci_path": "ip\\design_1_DatBus_0_0\\design_1_DatBus_0_0.xci",
+        "inst_hier_path": "DatBus_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DatBus",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DatOut": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "IntDatSrds": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "FDCE_ARRAYS_0": {
+        "vlnv": "xilinx.com:module_ref:FDCE_ARRAYS:1.0",
+        "xci_name": "design_1_FDCE_ARRAYS_0_0",
+        "xci_path": "ip\\design_1_FDCE_ARRAYS_0_0\\design_1_FDCE_ARRAYS_0_0.xci",
+        "inst_hier_path": "FDCE_ARRAYS_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FDCE_ARRAYS",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IntDat": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "DatClkDiv": {
+            "direction": "I"
+          },
+          "IntDatEna": {
+            "direction": "I"
+          },
+          "DatReSync": {
+            "direction": "I"
+          },
+          "IntDatSrds": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "DatMux_0": {
+        "vlnv": "xilinx.com:module_ref:DatMux:1.0",
+        "xci_name": "design_1_DatMux_0_0",
+        "xci_path": "ip\\design_1_DatMux_0_0\\design_1_DatMux_0_0.xci",
+        "inst_hier_path": "DatMux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DatMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IntDatMux": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "DatSwapMux": {
+            "direction": "I"
+          },
+          "IntDat": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "FdceReg_0": {
+        "vlnv": "xilinx.com:module_ref:FdceReg:1.0",
+        "xci_name": "design_1_FdceReg_0_0",
+        "xci_path": "ip\\design_1_FdceReg_0_0\\design_1_FdceReg_0_0.xci",
+        "inst_hier_path": "FdceReg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FdceReg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IntDatMux": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "DatClkDiv": {
+            "direction": "I"
+          },
+          "IntDatEna": {
+            "direction": "I"
+          },
+          "DatReSync": {
+            "direction": "I"
+          },
+          "IntDatSwp": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "iserdes_adc_0": {
+        "vlnv": "xilinx.com:module_ref:iserdes_adc:1.0",
+        "xci_name": "design_1_iserdes_adc_0_0",
+        "xci_path": "ip\\design_1_iserdes_adc_0_0\\design_1_iserdes_adc_0_0.xci",
+        "inst_hier_path": "iserdes_adc_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "iserdes_adc",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DatBitSlip_p": {
+            "direction": "I"
+          },
+          "DatBitSlip_n": {
+            "direction": "I"
+          },
+          "IntDatDone": {
+            "direction": "I"
+          },
+          "DatClk": {
+            "direction": "I"
+          },
+          "DatClkDiv": {
+            "direction": "I"
+          },
+          "ADCDATAPInt": {
+            "direction": "I"
+          },
+          "DatRst": {
+            "direction": "I"
+          },
+          "ADCDATANInt": {
+            "direction": "I"
+          },
+          "DatOut": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AdcDataDone_0_IntDatDone": {
+        "ports": [
+          "AdcDataDone_0/IntDatDone",
+          "iserdes_adc_0/IntDatDone"
+        ]
+      },
+      "AdcDataDone_0_IntDatEna": {
+        "ports": [
+          "AdcDataDone_0/IntDatEna",
+          "FDCE_ARRAYS_0/IntDatEna",
+          "FdceReg_0/IntDatEna"
+        ]
+      },
+      "DatBitSlip_n_0_1": {
+        "ports": [
+          "DatBitSlip_n_0",
+          "iserdes_adc_0/DatBitSlip_n"
+        ]
+      },
+      "DatBitSlip_p_0_1": {
+        "ports": [
+          "DatBitSlip_p_0",
+          "iserdes_adc_0/DatBitSlip_p"
+        ]
+      },
+      "DatBus_0_IntDatSrds": {
+        "ports": [
+          "DatBus_0/IntDatSrds",
+          "FDCE_ARRAYS_0/IntDatSrds"
+        ]
+      },
+      "DatClkDiv_0_1": {
+        "ports": [
+          "DatClkDiv_0",
+          "AdcDataDone_0/DatClkDiv",
+          "FDCE_ARRAYS_0/DatClkDiv",
+          "FdceReg_0/DatClkDiv",
+          "iserdes_adc_0/DatClkDiv"
+        ]
+      },
+      "DatClk_0_1": {
+        "ports": [
+          "DatClk_0",
+          "iserdes_adc_0/DatClk"
+        ]
+      },
+      "DatDone_0_1": {
+        "ports": [
+          "DatDone_0",
+          "AdcDataDone_0/DatDone"
+        ]
+      },
+      "DatEna_0_1": {
+        "ports": [
+          "DatEna_0",
+          "AdcDataDone_0/DatEna"
+        ]
+      },
+      "DatMux_0_IntDatMux": {
+        "ports": [
+          "DatMux_0/IntDatMux",
+          "FdceReg_0/IntDatMux"
+        ]
+      },
+      "DatReSync_0_1": {
+        "ports": [
+          "DatReSync_0",
+          "FDCE_ARRAYS_0/DatReSync",
+          "FdceReg_0/DatReSync"
+        ]
+      },
+      "DatRst_0_1": {
+        "ports": [
+          "DatRst_0",
+          "AdcDataDone_0/DatRst",
+          "iserdes_adc_0/DatRst"
+        ]
+      },
+      "DatSwapMux_0_1": {
+        "ports": [
+          "DatSwapMux_0",
+          "DatMux_0/DatSwapMux"
+        ]
+      },
+      "FDCE_ARRAYS_0_IntDat": {
+        "ports": [
+          "FDCE_ARRAYS_0/IntDat",
+          "DatMux_0/IntDat"
+        ]
+      },
+      "iserdes_adc_0_DatOut": {
+        "ports": [
+          "iserdes_adc_0/DatOut",
+          "DatBus_0/DatOut"
+        ]
+      }
+    }
+  }
+}

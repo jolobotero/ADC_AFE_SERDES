@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="iserdes_1_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="iserdes_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="813,969.416 ns"></ZoomStartTime>
+      <ZoomEndTime time="814,526.917 ns"></ZoomEndTime>
+      <Cursor1Time time="814,659.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="109"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/iserdes_1/FCLK_p" type="logic">
+      <obj_property name="ElementShortName">FCLK_p</obj_property>
+      <obj_property name="ObjectShortName">FCLK_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/DClk_p" type="logic">
+      <obj_property name="ElementShortName">DClk_p</obj_property>
+      <obj_property name="ObjectShortName">DClk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/FCLK_n" type="logic">
+      <obj_property name="ElementShortName">FCLK_n</obj_property>
+      <obj_property name="ObjectShortName">FCLK_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/d/BitClk_RefClkIn" type="logic">
+      <obj_property name="ElementShortName">BitClk_RefClkIn</obj_property>
+      <obj_property name="ObjectShortName">BitClk_RefClkIn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/AdcReSync" type="logic">
+      <obj_property name="ElementShortName">AdcReSync</obj_property>
+      <obj_property name="ObjectShortName">AdcReSync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/DCLK_n" type="logic">
+      <obj_property name="ElementShortName">DCLK_n</obj_property>
+      <obj_property name="ObjectShortName">DCLK_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/Data_p" type="logic">
+      <obj_property name="ElementShortName">Data_p</obj_property>
+      <obj_property name="ObjectShortName">Data_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/Data_n" type="logic">
+      <obj_property name="ElementShortName">Data_n</obj_property>
+      <obj_property name="ObjectShortName">Data_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/AdcIntrfcRst" type="logic">
+      <obj_property name="ElementShortName">AdcIntrfcRst</obj_property>
+      <obj_property name="ObjectShortName">AdcIntrfcRst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/AdcIntrfcEna" type="logic">
+      <obj_property name="ElementShortName">AdcIntrfcEna</obj_property>
+      <obj_property name="ObjectShortName">AdcIntrfcEna</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/dataOut" type="array">
+      <obj_property name="ElementShortName">dataOut[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/BitClkDone" type="logic">
+      <obj_property name="ElementShortName">BitClkDone</obj_property>
+      <obj_property name="ObjectShortName">BitClkDone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/iserdes_1/d/BitClk_MonClkIn" type="logic">
+      <obj_property name="ElementShortName">BitClk_MonClkIn</obj_property>
+      <obj_property name="ObjectShortName">BitClk_MonClkIn</obj_property>
+   </wvobject>
+</wave_config>
